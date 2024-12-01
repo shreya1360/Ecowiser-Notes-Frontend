@@ -74,7 +74,7 @@ export default function Page() {
         })
         if (response.ok) {
           const updatedNote = await response.json()
-          toast.success(`Note ${updatedNote.pinned ? 'pinned' : 'unpinned'} successfully`)
+          toast.success(`Note ${!updatedNote.pinned ? 'pinned' : 'unpinned'} successfully`)
           setNotes(prevNotes =>
             prevNotes.map(note =>
               note._id === id ? { ...note, pinned: !note.pinned } : note
