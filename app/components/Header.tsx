@@ -9,7 +9,7 @@ export default function Header() {
           <h1 className="text-2xl font-bold text-white">Ecowiser Notes</h1>
         </div>
         <p className="text-sm text-green-100 italic">
-          Empowering sustainable choices, one note at a time
+          Empowering sustainable choices
         </p>
       </div>
     </header>
