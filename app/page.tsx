@@ -100,8 +100,8 @@ export default function Page() {
         body: JSON.stringify({ title, description }),
       })
       if (response.ok) {
-        const updatedNoteData: Note = await response.json()
-
+       
+ 
         toast.success('Note updated successfully')
         fetchNotes()
       } else {
